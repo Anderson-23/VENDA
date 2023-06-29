@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --padding-size: 10px 10px 10px 10px; /* tamanho do padding cabecalho */
+    --cor-principal: #EBA328;
+    --cor-secundaria: #0730F5;
+    --cor-terciaria: #ff2600;
+    --degrade-primario:linear-gradient(to left,var(--cor-principal),var(--cor-secundaria),var(--cor-terciaria));
+}
+
+body{
+    
+    background-color: rgb(240, 240, 255);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sacao1{
+
+    background: var(--cor-principal);
+    padding: var(--padding-size);
+    overflow: hidden;
+    position: relative;
+  
+}
+#fale-conosco a{
+
+text-decoration: none;
+color: var(--cor-secundaria);
+font-size: 20px;
+
+
+}
+
+#fale-conosco{
+
+        top: 1.5em;
+        right: 0.5em;
+        position: absolute;
+        width: 150PX;
+        transition: all 800MS;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+    }
+
+#loja{
+
+text-transform: uppercase;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 400;
+
+}
+
+.sacao1 div{
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin: 1px 0px 0px 12px;
+    justify-content: space-between;
+
+}
+
+.sacao1 div h1{
+
+    color: var(--cor-secundaria);
+
+}
+
+.sacao1 div p{
+
+    color: var(--cor-secundaria);
+    margin-left: 25px;
+
+}
+
+.sacao1 div img{
+
+    border-radius: 50%;
+    width: 50px;
+
+}
+
+    /* estilizando segunda sesão */
+
+.sacao2{
+
+    background:var(--cor-secundaria) ;
+    padding: var(--padding-size);
+    display: flex;
+    border-radius: 0px 0px 15px 15px;
+    width: 100vw;
+    align-items: center;
+    height: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.link1{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    transition: 700ms ease;
+    overflow: hidden;
+}
+
+/* estilizando links */
+
+.sacao2 .link1 a{
+
+    text-decoration: none;
+    color: var(--cor-principal);
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    padding: 3px;
+    transition: width 0.5s ease-in,background 0.5s ease-in-out,color 0.5s ease-in-out;
+
+    &:hover{
+        
+        background: var(--cor-principal);
+        color: var(--cor-secundaria);
+        width: 120px;
+
+    } 
+
+}
+
+/* configurando caixa de pesquisa */
+
+.botao:hover main.teste{
+
+background-color: #EBA328;
+}
+
+.botao{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    transform: translate(-50% -50%);
+    display: flex;
+    border-radius: 35px;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 2px;
+    gap: 5px;
+    background-color: var(--cor-principal);
+    transition: 600ms ease-in-out;
+  
+    &:hover .cx-pesquisar{
+
+        width: 200px;
+       
+      
+    }
+}
+
+
+.cx-pesquisar{
+
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 15px;
+    color: var(--cor-secundaria);
+    width: 0;
+    transition: 600ms ease-in-out;
+
+    &:focus{
+
+        width: 200px;
+
+    }
+
+}
+
+#pesquisa{
+    
+    background: none;
+    border: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+                
+    position: absolute;
+    top: -13px;
+    left: -55px;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .mudarcor{
+        width: 0;
+     
+    }
+ 
+    .mudarcor2{
+ 
+    width: 0;
+    }
+
+}
+@media screen and (max-width: 700px) {
+
+    .link1{
+
+        width: 0;
+        
+    }
+    #fale-conosco{
+        top: -3em;
+        overflow: hidden;
+ 
+    }
+    #fale-conosco a{
+
+        color: transparent;
+        
+        }
+        .sacao2{
+
+            position: relative;
+            overflow: visible;
+        
+        }
+
+        /* menu hamburguer */
+      
+            .container{
+            
+                position: absolute;
+                top: -13px;
+                left: 5px;
+                width: 20px;
+                display: flex;
+                position: relative;
+                margin: 0;
+                overflow: visible;
+               
+            }
+            .teste{
+
+            position: absolute;
+            background-color: red;
+            width: 0;
+            height: 0px;
+            transition: all 800ms;
+            left: -15px;
+            top: -12px;
+            display: flex;
+            border-radius: 0 0 100% 100% ;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            gap: 35px;
+    
+
+            }
+            .teste a{
+                
+              display: none;
+            }
+
+            .btn{
+
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 27px;
+                height: 27px;
+                display: flex;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            #menuHamb{
+
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                transition: all 800ms;
+                top: 0;
+                left: 0;
+            }
+            
+            .btn:hover #menuHamb{
+            
+                transform: scale(1.5)
+            
+            }
+            
+            .divmudar{
+            
+                width: 350px;
+                height: 350px;
+                border-radius: 0 50% 0 50%;  
+            
+            }
+            .divmudar a{
+                transition: all 800ms;
+                display: block;
+                font-size: 25px;
+                width:150px;
+                box-sizing: border-box;
+                text-align: center;
+                padding: 6px;
+                text-decoration: none;
+                color: var(--cor-principal);
+                border-radius: 25px 0;
+
+                &:hover{
+
+                    color: var(--cor-terciaria);
+                    background-color: var(--cor-secundaria);
+                    transform: scale(1.2);
+                    
+                
+                }
+            }
+ 
+}
+
+@media screen and (max-width: 350px) {
+
+    .botao:hover{
+
+        width: 80vw;
+        overflow: visible;
+
+    }
+    .botao:hover .cx-pesquisar{
+
+        width: 70vw;
+        padding: 5px;
+       
+
+    }
+    .botao:hover #pesquisa{
+
+        display: none;
+
+    }
+ 
+}
