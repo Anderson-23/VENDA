@@ -11,7 +11,7 @@
     }
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
     .link1{
 
@@ -104,16 +104,16 @@
             
             .divmudar{
             
-                width: 350px;
-                height: 350px;
+                width: clamp(3rem,4rem + 29vw, 30rem);
+                height: clamp(3rem,12rem + 23vh, 28rem);
                 border-radius: 0 50% 0 50%;  
             
             }
             .divmudar a{
                 transition: all 800ms;
                 display: block;
-                font-size: 25px;
-                width:150px;
+                font-size: clamp(0.3rem,0.5rem + 2vw, 2rem);
+                width:20vw;
                 box-sizing: border-box;
                 text-align: center;
                 padding: 6px;
