@@ -116,7 +116,7 @@
                 transition: all 800ms;
                 display: block;
                 font-size: clamp(0.3rem,0.5rem + 2vw, 2rem);
-                width:20vw;
+                width: 24vw;
                 box-sizing: border-box;
                 text-align: center;
                 padding: 6px;
