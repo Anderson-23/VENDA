@@ -107,17 +107,16 @@
             
             .divmudar{
             
-                width: clamp(3rem,4rem + 29vw, 30rem);
+                width: clamp(3rem,4rem + 39vw, 30rem);
                 gap: 25px;
-                border-radius: 0 50% 50% 0;  
+                border-radius: 0 45% 45% 0;  
             
             }
             .divmudar a{
                 transition: all 800ms;
                 display: block;
                 font-size: clamp(0.3rem,0.5rem + 2vw, 2rem);
-                width: clamp(1.5rem,4rem + 6vw, 7rem);                box-sizing: border-box;
-                text-align: center;
+                width: clamp(3rem,5rem + 7vw, 9rem);                text-align: center;
                 padding: 8px;
                 text-decoration: none;
                 color: var(--cor-principal);
