@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
 
     .mudarcor{
         width: 0;
@@ -19,6 +19,7 @@
         
     }
     #fale-conosco{
+
         top: -3em;
         overflow: hidden;
  
@@ -27,13 +28,13 @@
 
         color: transparent;
         
-        }
-        .sacao2{
+    }
+    .sacao2{
 
-            position: relative;
-            overflow: visible;
-        
-        }
+        position: relative;
+        overflow: visible;
+
+    }
 
         /* menu hamburguer */
       
